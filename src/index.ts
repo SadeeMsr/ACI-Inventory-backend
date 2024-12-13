@@ -33,7 +33,7 @@ async function startServer() {
     '/graphql',
     cors<cors.CorsRequest>({
       origin: process.env.NODE_ENV === 'production' 
-        ? ['https://your-client-domain.vercel.app']
+        ? ['https://aci-inventory-frontend.vercel.app']
         : ['http://localhost:3000'],
       credentials: true
     }),
